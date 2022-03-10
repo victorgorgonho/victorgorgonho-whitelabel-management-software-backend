@@ -1,1 +1,1 @@
-# victorgorgonho-whitelabel-management-software-backend
+# whitelabel-management-software-backend
