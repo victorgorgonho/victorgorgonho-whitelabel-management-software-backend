@@ -1,27 +1,12 @@
 import { Request, Response, response } from 'express';
 import usersController from '../../src/app/controllers/usersController';
 import { TIMEOUT } from '../constants';
+import { res } from '../utils/response';
 
 describe('UsersController', () => {
   let controller = usersController;
   let token: string;
   let userId: number;
-
-  const res: Response = {
-    status: (status: number) => {
-      return {
-        send: (data: any) => {
-          return data;
-        },
-        json: (data: any) => {
-          return data;
-        },
-      };
-    },
-    json: (data: any) => {
-      return data;
-    },
-  } as Response;
 
   test(
     'auth should return a token',

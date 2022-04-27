@@ -2,25 +2,10 @@ import { Request, Response } from 'express';
 import reportsController from '../../src/app/controllers/reportsController';
 import usersController from '../../src/app/controllers/usersController';
 import { TIMEOUT } from '../constants';
+import { res } from '../utils/response';
 
 describe('reportsController', () => {
   let token: string;
-
-  const res: Response = {
-    status: (status: number) => {
-      return {
-        send: (data: any) => {
-          return data;
-        },
-        json: (data: any) => {
-          return data;
-        },
-      };
-    },
-    json: (data: any) => {
-      return data;
-    },
-  } as Response;
 
   beforeAll(async () => {
     const req: Request = {
