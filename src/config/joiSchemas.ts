@@ -25,6 +25,7 @@ class Schemas {
         'string.empty': `"Tipo de usuário" não pode ser vazio`,
         'any.required': `"Tipo de usuário" é obrigatório`,
       }),
+      birthDate: Joi.string().optional(),
     }),
   };
 

@@ -59,18 +59,22 @@ class UsersController {
 
       const now = new Date();
 
-      let dateParts = userBody.birthDate.split('/');
-      let dateFormatted = new Date(
-        `${dateParts[1]}/${dateParts[0]}/${dateParts[2]}`,
-      );
+      if (userBody.birthDate) {
+        const dateParts = userBody.birthDate.split('/');
+        let dateFormatted = new Date(
+          `${dateParts[1]}/${dateParts[0]}/${dateParts[2]}`,
+        );
 
-      if (!isValidDate(dateFormatted))
-        return res.status(400).send({ message: 'Data de nascimento inválida' });
+        if (!isValidDate(dateFormatted))
+          return res
+            .status(400)
+            .send({ message: 'Data de nascimento inválida' });
 
-      if (!isValidDate(dateFormatted))
-        return res
-          .status(400)
-          .send({ message: 'Data de primeiro pagamento inválida' });
+        if (!isValidDate(dateFormatted))
+          return res
+            .status(400)
+            .send({ message: 'Data de primeiro pagamento inválida' });
+      }
 
       if (!userBody.paymentDay) userBody.paymentDay = 1;
       if (!userBody.tolerance) userBody.tolerance = 1;
@@ -132,7 +136,7 @@ class UsersController {
       if (error.details) {
         return res.status(400).send({ message: error.details[0].message });
       }
-
+      console.log(error);
       return res.status(500).send({ message: 'Falha ao autenticar usuário' });
     }
   }
@@ -243,14 +247,8 @@ class UsersController {
 
   async filter(req: Request, res: Response) {
     try {
-      const {
-        name,
-        registration,
-        isActive,
-        isCompliant,
-        user_type,
-        id,
-      } = req.query;
+      const { name, registration, isActive, isCompliant, user_type, id } =
+        req.query;
 
       let users: Array<any> = [];
 
@@ -453,6 +451,8 @@ class UsersController {
 
   async destroy(req: Request, res: Response) {
     const { id } = req.params;
+
+    console.log('id', id);
 
     const user = await knex('users').where('id', id).delete();
 

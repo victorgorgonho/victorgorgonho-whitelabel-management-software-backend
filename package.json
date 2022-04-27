@@ -2,7 +2,7 @@
   "name": "server",
   "version": "1.0.0",
   "engines": {
-    "node": "^14.17.5"
+    "node": "^16.14.2"
   },
   "description": "",
   "main": "index.js",
@@ -11,11 +11,15 @@
     "dev": "ts-node-dev --ignore-watch node_modules src/server.ts",
     "start": "node src/server.js",
     "knex:seed": "knex --knexfile knexfile.ts seed:run",
-    "knex:migrate": "knex --knexfile knexfile.ts migrate:latest"
+    "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
+    "test": "jest --coverage"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "transform": {
+    "\\.js$": "<rootDir>/node_modules/babel-jest"
+  },
   "dependencies": {
     "aws-sdk": "^2.792.0",
     "bcryptjs": "^2.4.3",
@@ -31,13 +35,19 @@
     "pg": "^8.4.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
     "@types/bcryptjs": "^2.4.2",
     "@types/cors": "^2.8.6",
     "@types/express": "^4.17.6",
     "@types/hapi__joi": "^17.1.2",
+    "@types/jest": "^27.4.1",
     "@types/jsonwebtoken": "^8.5.0",
     "@types/multer": "^1.4.3",
     "@types/multer-s3": "^2.7.8",
+    "babel-jest": "^28.0.1",
+    "jest": "^28.0.1",
     "ts-node": "^8.10.2",
     "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "^3.9.3"
