@@ -12,5 +12,5 @@ jobs:
           node-version: 16.x
       - name: Install modules
         run: yarn upgrade
-      - name: Run Tests
-        run: yarn jest
+      - name: Run Jest
+        uses: stefanoeb/jest-action@1.0.4
