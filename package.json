@@ -12,7 +12,8 @@
     "start": "node src/server.js",
     "knex:seed": "knex --knexfile knexfile.ts seed:run",
     "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "test:ci": "jest --ci"
   },
   "keywords": [],
   "author": "",
