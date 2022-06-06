@@ -8,10 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
         with:
           node-version: 16.x
       - name: Install modules
         run: yarn upgrade
       - name: Run Tests
-        run: yarn jest --detectOpenHandles
+        run: yarn jest

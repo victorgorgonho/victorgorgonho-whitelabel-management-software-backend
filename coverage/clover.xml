@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1651066607079" clover="3.2.0">
-  <project timestamp="1651066607080" name="All files">
+<coverage generated="1654478097037" clover="3.2.0">
+  <project timestamp="1654478097037" name="All files">
     <metrics statements="268" coveredstatements="165" conditionals="194" coveredconditionals="65" methods="23" coveredmethods="20" elements="485" coveredelements="250" complexity="0" loc="268" ncloc="268" packages="5" files="7" classes="7"/>
     <package name="src.app.controllers">
       <metrics statements="251" coveredstatements="148" conditionals="194" coveredconditionals="65" methods="19" coveredmethods="16"/>
-      <file name="paymentsController.ts" path="/Users/arthurruan/www/ufpb/eng-soft/whitelabel-management-software-backend/src/app/controllers/paymentsController.ts">
+      <file name="paymentsController.ts" path="/media/honorio/7DE44BA35CD40104/UFPB/2021.2/workspace/ES/whitelabel-management-software-backend/src/app/controllers/paymentsController.ts">
         <metrics statements="60" coveredstatements="44" conditionals="45" coveredconditionals="15" methods="5" coveredmethods="5"/>
         <line num="7" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
@@ -67,14 +67,14 @@
         <line num="156" count="1" type="stmt"/>
         <line num="160" count="0" type="stmt"/>
       </file>
-      <file name="reportsController.ts" path="/Users/arthurruan/www/ufpb/eng-soft/whitelabel-management-software-backend/src/app/controllers/reportsController.ts">
+      <file name="reportsController.ts" path="/media/honorio/7DE44BA35CD40104/UFPB/2021.2/workspace/ES/whitelabel-management-software-backend/src/app/controllers/reportsController.ts">
         <metrics statements="13" coveredstatements="10" conditionals="12" coveredconditionals="6" methods="3" coveredmethods="3"/>
         <line num="6" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
         <line num="9" count="1" type="stmt"/>
         <line num="11" count="1" type="cond" truecount="3" falsecount="1"/>
         <line num="12" count="1" type="stmt"/>
-        <line num="13" count="20" type="stmt"/>
+        <line num="13" count="22" type="stmt"/>
         <line num="17" count="1" type="cond" truecount="3" falsecount="1"/>
         <line num="18" count="1" type="stmt"/>
         <line num="19" count="14" type="stmt"/>
@@ -83,7 +83,7 @@
         <line num="26" count="0" type="stmt"/>
         <line num="29" count="0" type="stmt"/>
       </file>
-      <file name="usersController.ts" path="/Users/arthurruan/www/ufpb/eng-soft/whitelabel-management-software-backend/src/app/controllers/usersController.ts">
+      <file name="usersController.ts" path="/media/honorio/7DE44BA35CD40104/UFPB/2021.2/workspace/ES/whitelabel-management-software-backend/src/app/controllers/usersController.ts">
         <metrics statements="178" coveredstatements="94" conditionals="137" coveredconditionals="44" methods="11" coveredmethods="8"/>
         <line num="11" count="4" type="stmt"/>
         <line num="17" count="0" type="cond" truecount="0" falsecount="2"/>
@@ -171,10 +171,10 @@
         <line num="219" count="1" type="stmt"/>
         <line num="223" count="1" type="stmt"/>
         <line num="227" count="1" type="stmt"/>
-        <line num="228" count="434" type="cond" truecount="2" falsecount="0"/>
-        <line num="229" count="434" type="cond" truecount="1" falsecount="1"/>
-        <line num="230" count="434" type="stmt"/>
-        <line num="231" count="434" type="stmt"/>
+        <line num="228" count="447" type="cond" truecount="2" falsecount="0"/>
+        <line num="229" count="447" type="cond" truecount="1" falsecount="1"/>
+        <line num="230" count="447" type="stmt"/>
+        <line num="231" count="447" type="stmt"/>
         <line num="234" count="1" type="stmt"/>
         <line num="242" count="0" type="stmt"/>
         <line num="249" count="1" type="stmt"/>
@@ -267,7 +267,7 @@
     </package>
     <package name="src.config">
       <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="joiSchemas.ts" path="/Users/arthurruan/www/ufpb/eng-soft/whitelabel-management-software-backend/src/config/joiSchemas.ts">
+      <file name="joiSchemas.ts" path="/media/honorio/7DE44BA35CD40104/UFPB/2021.2/workspace/ES/whitelabel-management-software-backend/src/config/joiSchemas.ts">
         <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="4" count="3" type="stmt"/>
         <line num="32" count="3" type="stmt"/>
@@ -283,21 +283,21 @@
     </package>
     <package name="src.database">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="connection.ts" path="/Users/arthurruan/www/ufpb/eng-soft/whitelabel-management-software-backend/src/database/connection.ts">
+      <file name="connection.ts" path="/media/honorio/7DE44BA35CD40104/UFPB/2021.2/workspace/ES/whitelabel-management-software-backend/src/database/connection.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="3" count="3" type="stmt"/>
       </file>
     </package>
     <package name="tests">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="constants.ts" path="/Users/arthurruan/www/ufpb/eng-soft/whitelabel-management-software-backend/tests/constants.ts">
+      <file name="constants.ts" path="/media/honorio/7DE44BA35CD40104/UFPB/2021.2/workspace/ES/whitelabel-management-software-backend/tests/constants.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="3" type="stmt"/>
       </file>
     </package>
     <package name="tests.utils">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
-      <file name="response.ts" path="/Users/arthurruan/www/ufpb/eng-soft/whitelabel-management-software-backend/tests/utils/response.ts">
+      <file name="response.ts" path="/media/honorio/7DE44BA35CD40104/UFPB/2021.2/workspace/ES/whitelabel-management-software-backend/tests/utils/response.ts">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
         <line num="3" count="3" type="stmt"/>
         <line num="5" count="2" type="stmt"/>
