@@ -7,10 +7,10 @@ jobs:
     name: Tests
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
         with:
           node-version: 16.x
       - name: Install modules
         run: yarn upgrade
-      - name: Run Jest
-        uses: stefanoeb/jest-action@1.0.4
+      - name: Run Tests
+        run: yarn jest
