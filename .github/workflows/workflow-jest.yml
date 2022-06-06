@@ -13,4 +13,4 @@ jobs:
       - name: Install modules
         run: yarn upgrade
       - name: Run Tests
-        run: yarn test:ci
+        run: yarn jest --forceExit
