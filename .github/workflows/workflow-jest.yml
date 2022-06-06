@@ -14,4 +14,4 @@ jobs:
       - name: Install modules
         run: yarn upgrade
       - name: Run Tests
-        run: yarn jest
+        run: yarn jest --detectOpenHandles
