@@ -12,6 +12,7 @@ jobs:
         with:
           node-version: 16.x
       - name: Install modules
+        run: yarn upgrade
         run: yarn
       - name: Run Tests
         run: yarn jest
